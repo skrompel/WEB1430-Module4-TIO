@@ -11,7 +11,7 @@ function calculateArea() {
         return;
     }
 
-    let area = Math.PI * radius * radius.value;
+    let area = Math.PI * radius * radius; // radius.value resulted in "NaN"
     document.getElementById('result').innerText = "The area is: " + area;
 }
 
