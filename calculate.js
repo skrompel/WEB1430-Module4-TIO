@@ -1,9 +1,9 @@
-"use stric";
+"use strict";
 
 document.getElementById('calculateBtn').addEventListener('click', calculateArea);
 document.getElementById('resetBtn').addEventListener('click', resetForm);
 
-function calculateArea( {
+function calculateArea() {
     let radius = document.getElementById('radius').value;
     
     if (radius < 0 | radius === '') {
@@ -16,6 +16,6 @@ function calculateArea( {
 }
 
 function resetForm() {
-    document.getElementById('radius).value = '';
+    document.getElementById('radius').value = '';
     document.getElementById('result').innerText = '';
-
+}
